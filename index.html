@@ -6,12 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>bootstrap-creative-tim</title>
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One|Raleway|Roboto+Slab" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <style>
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    body
+    {
+      font-family: 'Lato', sans-serif;
+      padding-top: 50px;
+      overflow-x: hidden;
+    }
+    #home-image
+    {
+      width: 100%;
+      height:100%;
+    }
+    .navbar
+    {
+      margin-bottom:0px;
+      border:none;
+    }
+    #mynavigationbar a
+    {
+      color:grey;
+      font-size:18px;
+    }
+    .navbar-default  a.navbar-brand
+    {
+      color:grey;
+      font-size:22px;
+      margin-right: 26px;
+    }
+    #home
+    {
+      position:relative;
+      height:400px;
+      margin-top:0px;
+    }
+    #home .container
+    {
 
+      position:absolute;
+      top:20%;
+      width:100%;
+    }
 
+    #home h1
+    {
+      color:white;
+      font-size:100px;
+      font-family: 'Poiret One', cursive;
+      letter-spacing: 50px;
+    }
+    #home h2
+    {
+      color:white;
+    }
+    .scroll-icon
+    {
+      margin-top:150px;
+    }
+    .scroll-icon a
+    {
+        font-size:30px;
+        color:white;
+        border:1px solid white;
+        padding:10px 10px 5px 12px;
+        border-radius:50%;
+    }
+    #home .line-1
+    {
+      border: 2px solid white;
+      width:20%;
+      margin-left: 24%;
+    }
+    #home .line-2
+    {
+      border: 2px solid white;
+      width:20%;
+      margin-left: 54%;
+      margin-top: -6px;
+    }
+
+    section
+    {
+      min-height:610px;
+      margin-top:50px;
+    }
+
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavigationbar" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -33,6 +126,34 @@
         </div>
       </div>
    </nav>
+   <section id="home">
+     <img id="home-image" src="assets/img/home-img.jpg" >
+     <div class="container">
+       <div class="row">
+         <h1 class="text-center">Creative Tim</h1>
+         <div class="row">
+           <div class="line-1">
+             <div class="col-md-6" ></div>
+           </div>
+           <div class="line-2">
+             <div class="col-md-6"></div>
+           </div>
+
+        </div>
+         <h2 class="text-center">Awesome Bootstrap freebies and templates to build better websites</h2>
+         <div class="scroll-icon text-center">
+           <a href="#about">
+             <span class="glyphicon glyphicon-chevron-down"></span>
+           </a>
+         </div>
+       </div>
+     </div>
+   </section>
+   <section id="about"></section>
+   <section id="what-we-do"></section>
+   <section id="team"></section>
+   <section id="tools"></section>
+   <section id="contact"></section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

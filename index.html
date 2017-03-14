@@ -105,7 +105,7 @@
     #about .heading-line
       {
         border: 2px solid #c5a47e;
-        width: 20%
+        width: 20%;
       }
       #about h1
       {
@@ -149,7 +149,7 @@
       #team .heading-line
       {
         border: 2px solid #c5a47e;
-        width: 20%
+        width: 20%;
       }
       .team-img
       {
@@ -197,7 +197,7 @@
       #tools .heading-line
       {
         border: 2px solid #c5a47e;
-        width: 20%
+        width: 20%;
       }
       #tools h4,p
       {
@@ -220,7 +220,7 @@
       #contact .heading-line
       {
         border: 2px solid #c5a47e;
-        width: 20%
+        width: 20%;
       }
       #tools a.btn
       {
@@ -230,11 +230,11 @@
       }
       #tools a.btn.btn-primary
       {
-        background-color: #777777
+        background-color: #777777;
       }
       #contact .col-md-4
       {
-        background-color: #ccc
+        background-color: #ccc;
       }
       #contact a.btn.btn-primary
       {
@@ -244,11 +244,15 @@
       #contact h4
       {
         color: #777777;
-        margin: 16px
+        margin: 16px;
       }
       #contact .col-md-6
       {
         left: 31px;
+      }#contact .container
+      {
+
+        width: 100%;
       }
 
       @media (max-width:500px)
@@ -275,16 +279,47 @@
         {
           margin-bottom:20px;
         }
+        
         nav.navbar-default #mynavigationbar .navbar-creative-tim
         {
           margin-left:-15px;
         }
+
 
       }
       #mygooglemap
       {
         height: 400px;
         width: 100%;
+      }
+
+      footer
+      {
+        background:rgba(30, 30, 30, 0.97);
+        margin-top:30px;
+        padding:20px;
+      }
+      .footer-links li , .footer-icons li
+      {
+        display: inline-block;
+      }
+      .footer-links li a , .footer-icons li a
+      {
+        color: #777777;
+        font-size: 16px;
+        padding: 10px;
+      }
+      .footer-links li a:hover , .footer-icons li a:hover
+      {
+        text-decoration:none;
+      }
+      footer .footer-center-content
+      {
+        color:#777777;
+      }
+      .white-content
+      {
+        color:white;
       }
 
     </style>
@@ -528,7 +563,7 @@
      <div class="container">
        <div class="row">
          <div class="common-section-area">
-           <h1 class="text-center section-heading">Contact</h1>
+           <h1 class="text-center section-heading">Contact Us</h1>
            <hr class="heading-line" />
          </div>
        </div>
@@ -560,6 +595,40 @@
        </div>
      </div>
    </section>
+
+   <footer>
+     <div class="container">
+       <div class="row">
+         <div class="col-md-4">
+           <div class="footer-links">
+             <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Subscriptions</a></li>
+             </ul>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="footer-center-content text-center">
+             &copy; Copyright <span class="white-content">Creative Tim</span> 2017
+           </div>
+         </div>
+
+         <div class="col-md-4">
+           <div class="footer-icons text-center">
+             <ul>
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+             </ul>
+           </div>
+         </div>
+
+       </div>
+     </div>
+
+   </footer>
 
    <script>
    function initMap()

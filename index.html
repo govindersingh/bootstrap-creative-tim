@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>bootstrap-creative-tim</title>
+    <!-- Bootstrap -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One|Raleway|Roboto+Slab" rel="stylesheet">
     <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!--<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">-->
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon-img-3.png"/>
     <style>
     html,body
     {
@@ -62,7 +65,7 @@
       color:white;
       font-size:100px;
       font-family: 'Poiret One', cursive;
-      letter-spacing: 50px;
+      letter-spacing: 20px;
     }
     #home h2
     {
@@ -137,7 +140,7 @@
       #what-we-do p
       {
         color: #777777;
-        font-size: 18px;
+        font-size: 20px;
       }
       #team h1
       {
@@ -170,10 +173,18 @@
           color: #bbbbbb;
           margin-right:10px;
       }
+      #mynavigationbar a:hover
+      {
+        color: #c5a47e;
+      }
       .team-social-links a:hover
       {
         color:#c5a47e;
         text-decoration:none;
+      }
+      #tools img:hover
+      {
+        opacity:0.6;
       }
       .team-social-links
       {
@@ -188,6 +199,10 @@
         border: 2px solid #c5a47e;
         width: 20%
       }
+      #tools h4,p
+      {
+        color: #777777
+      }
       #what-we-do .icon
       {
         font-size: 80px;
@@ -198,20 +213,63 @@
         margin-bottom: 50px;
         margin-top: 35px;
       }
+      #contact h1
+      {
+        font-size: 55px;
+      }
+      #contact .heading-line
+      {
+        border: 2px solid #c5a47e;
+        width: 20%
+      }
+      #tools a.btn
+      {
+        border-radius: 25px;
+
+        border-color: #777777;
+      }
+      #tools a.btn.btn-primary
+      {
+        background-color: #777777
+      }
+      #contact .col-md-4
+      {
+        background-color: #ccc
+      }
+      #contact a.btn.btn-primary
+      {
+        background-color: #434547;
+        font-size: 160%;
+      }
+      #contact h4
+      {
+        color: #777777;
+        margin: 16px
+      }
+      #contact .col-md-6
+      {
+        left: 30px;
+      }
+
       @media (max-width:500px)
       {
+        button.navbar-toggle.collapsed
+        {
+          right: 18px;
+        }
         #home-image
         {
-          width: 89%;
-          height: 59%;
+          width: 100%;
+          height: 100%;
         }
         #home h1
         {
           font-size:50px;
+
         }
         #home h2
         {
-          font-size:20px;
+          font-size:22px;
         }
         .contact-description
         {
@@ -221,26 +279,12 @@
         {
           margin-left:-15px;
         }
-         #about
-        {
-          margin: 6px;
-        }
-        #what-we-do
-        {
-          margin: 53px;
-        }
-        #team
-        {
-          margin: 50px;
-        }
-        #tools
-        {
-          margin: 50px;
-        }
-        #contact
-        {
-          margin: 6px;
-        }
+
+      }
+      #mygooglemap
+      {
+        height: 400px;
+        width: 100%;
       }
 
     </style>
@@ -265,7 +309,12 @@
             <li><a href="#tools">Tools</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
         </div>
       </div>
    </nav>
@@ -434,37 +483,39 @@
          <div class="container">
            <div class="col-md-4">
              <div class="tools-elements">
-               <a href="http://google.com" target="_blank"><img src="http://presentation.creative-tim.com/assets/img/opt_md_thumbnail.jpg" class="img-responsive"></a>
+               <a href="https://www.creative-tim.com/product/material-dashboard?ref=presentation-page" target="_blank"><img src="http://presentation.creative-tim.com/assets/img/opt_md_thumbnail.jpg" class="img-responsive"></a>
                <h4 class="text-center">Just launched</h4>
                <h3 class="text-center">Material Dashboard</h3>
                <p class="text-center">Material Dashboard is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design</p>
                <div class="text-center">
                  <a href="#" class="btn btn-default my-rounded-button">Live view</a>
-                 <a href="#" class="btn btn-primary">Download</a>
+                 <a href="#" class="btn btn-primary">Free Download</a>
                </div>
              </div>
            </div>
 
            <div class="col-md-4">
              <div class="tools-elements">
+               <a href="https://www.creative-tim.com/product/material-kit?ref=presentation-page" target="_blank"><img src="http://presentation.creative-tim.com/assets/img/opt_mk_thumbnail.jpg" class="img-responsive"></a>
              <h4 class="text-center">6.800+ Downloads</h4>
              <h3 class="text-center">Material Kit</h3>
              <p class="text-center">Material Kit is a Free Bootstrap UI Kit with a fresh, new design inspired by Google's material design. You asked for it, so we built it. It's a great pleasure to introduce...</p>
              <div class="text-center">
                <a href="#" class="btn btn-default my-rounded-button">Live view</a>
-               <a href="#" class="btn btn-primary">Download</a>
+               <a href="#" class="btn btn-primary">Free Download</a>
              </div>
            </div>
            </div>
 
            <div class="col-md-4">
              <div class="tools-elements">
+               <a href="https://www.creative-tim.com/product/get-shit-done-kit?ref=presentation-page" target="_blank"><img src="http://presentation.creative-tim.com/assets/img/opt_GSDK_thumbnail.jpg" class="img-responsive"></a>
              <h4 class="text-center">19.200+ Downloads</h4>
              <h3 class="text-center">Get Shit Done Kit</h3>
              <p class="text-center">Free Bootstrap 3 UI Kit, the best starting point for any online project you are building. It magically offers responsive design and easy to use elements.</p>
              <div class="text-center">
                <a href="#" class="btn btn-default my-rounded-button">Live view</a>
-               <a href="#" class="btn btn-primary">Download</a>
+               <a href="#" class="btn btn-primary">Free Download</a>
              </div>
            </div>
            </div>
@@ -481,10 +532,46 @@
            <hr class="heading-line" />
          </div>
        </div>
+       <div class="row">
+         <div class="col-md-4">
+           <div class="contact-description">
+             <h3 class="text-center">Where to meet ?</h3>
+             <h4 class="text-center">Bld. Mihail Kogalniceanu nr. 8 Bucharest, Romania</h4>
+             <br>
+             <h3 class="text-center">Want to say hello ?</h3>
+             <div class="text-center">
+               <a href="#" class="btn btn-primary">Contact me</a>
+             </div>
+           </div>
+           <h3 class="text-center">Thankyou for 1000 shear!</h3>
+           <div class="row">
+           <div class="col-md-6">
+             <a href="#" class="btn btn-primary ">Facebook</a>
+           </div>
+           <div class="col-md-6">
+             <a href="#" class="btn btn-primary">Twitter</a>
+           </div>
+         </div>
+         </div>
+         <div class="col-md-8">
+           <div id="mygooglemap">
+           </div>
+         </div>
+       </div>
      </div>
    </section>
 
-
+   <script>
+   function initMap()
+   {
+     var uluru = {lat:28.631139, lng:  77.222053};
+     var map = new google.maps.Map(document.getElementById('mygooglemap'),{zoom: 12,center: uluru});
+     var marker = new google.maps.Marker({position: uluru,map: map});
+   }
+ </script>
+ <script async defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNuqg5BBn-kve7mtIEZxFHxYm46aKGnv4&callback=initMap">
+ </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
   </body>
